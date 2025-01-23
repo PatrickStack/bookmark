@@ -109,8 +109,8 @@ img {
 
 /* site header */
 .site-header {
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .site-header__container {
   display: flex;
