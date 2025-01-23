@@ -2,7 +2,7 @@
 --large-text: #242A45;
 --small-text-color: #242A45;
 --primary-button: #5267DF;
---orange-button: #FA5959;
+--red: #FA5959;
 --site-footer-bg: #242A45;
 --footer-top-bg: #5267DF;
 }
@@ -41,9 +41,10 @@ img {
 
 /* CONTAINER */
 .container {
-  max-width: 1000px;
-  padding-left: 50px;
-  padding-right: 50px;
+  width: 100%;
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -51,4 +52,107 @@ img {
 /* MAIN CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 8px 22px;
+  font-size: 14px;
+  line-height: 2;
+  cursor: pointer;
+  font-weight: 500;
+  color: #fff;
+  border: 3px solid transparent;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--primary-button);
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+.button:active {
+  opacity: 0.6;
+}
+.button-site-header {
+  background-color: var(--red);
+  color: #fff;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 10px 31px;
+}
+.button-site-header:hover {
+  background-color: #fff;
+  color: var(--red);
+  border-color: var(--red);
+}
+.button-gray {
+  background-color: #f7f7f7;
+  color:  var(--small-text-color);
+  opacity: 0.7;
+}
+.button-gray:hover {
+  background-color: #fff;
+  color: var(--large-text);
+  border-color: var(--large-text);
+}
+.button-blue {
+  background-color: var(--primary-button);
+  color: #fff;
+}
+.button-blue:hover {
+  background-color: #fff;
+  color: var(--primary-button);
+  border-color: var(--primary-button);
+}
+
+/* site header */
+.site-header {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.site-header__container {
+  display: flex;
+  align-items: center;
+}
+.site-header__logo {
+  display: block;
+}
+.site-header__logo-img {
+  width: 150px;
+  height: 25px;
+}
+.site-header__logo-img:hover {
+  opacity: 0.8;
+}
+
+.sitenav {
+  margin-left: auto;
+}
+.sitenav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sitenav__item {
+  margin-right: 50px;
+}
+.sitenav__link {
+  text-align: center;
+  display: block;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
+  color: var(--small-text-color);
+  opacity: 0.8;
+  text-decoration: none;
+}
+.sitenav__link:hover {
+  color: var(--red);
+  opacity: 1;
+}
+
+.button {
 }
