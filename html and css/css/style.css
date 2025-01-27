@@ -40,6 +40,30 @@ img {
   height: auto;
 }
 
+.section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.section-wrapper {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 540px;
+  height: 124px;
+  margin-bottom: 48px;
+}
+.section__title {
+  font-style: 32px;
+  line-height: 52px;
+  margin-bottom: 16px;
+}
+.section-text {
+  margin-top: 0;
+  opacity: 0.5;
+  font-size: 18px;
+  line-height: 28px;
+}
+
 /* CONTAINER */
 .container {
   width: 100%;
