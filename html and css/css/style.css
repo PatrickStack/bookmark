@@ -490,3 +490,88 @@ img {
   width: 100%;
   margin-bottom: 54px;
 }
+
+/* subscription */
+.subscription {
+  padding-top: 58px;
+  padding-bottom: 74px;
+  background-color: var(--footer-top-bg);
+}
+.subscription__wrapper {
+  text-align: center;
+  max-width: 445px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.subscription__count-text {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.subscription__heading {
+  text-align: center;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+}
+.subscription__form {
+  display: flex;
+}
+.subscription__field-wrapper {
+  position: relative;
+  margin-right: 16px;
+  width: 445px;
+  width: 100%;
+}
+.subscription__field:not(:focus):not(:placeholder-shown):invalid {
+  padding-right: 21px;
+  border-color: var(--red);
+  background-image: url(../img/error-disc.svg);
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+.subscription__field {
+  position: relative;
+  z-index: 1;
+  width: 100px;
+  max-width: 220px;
+  width: 100%;
+  padding: 10px 20px;
+  display: block;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 28px;
+}
+.subscription__error {
+  position: absolute;
+  left: 0;
+  top: calc(100% - 4px);
+  font-size: 10px;
+  line-height: 12px;
+  font-style: italic;
+  font-weight: 500;
+  padding: 6px 12px;
+  background-color: var(--red);
+  width: 100%;
+  max-width: 241px;
+  border-radius: 0px 0px 5px 5px;
+  text-align: left;
+}
+
+
+.subscription__field:focus ~ .subscription__error,
+.subscription__field:valid ~ .subscription__error,
+.subscription__field:placeholder-shown ~ .subscription__error {
+  display: none;
+}
