@@ -1,3 +1,8 @@
+const modifaer = {
+  AccordionItemOpen: 'accordion__item-open',
+  AccordionItemOpened: 'accordion__item-open'
+}
+
 const elsTabsLink = document.querySelectorAll('.js-tabs-link');
 const elsTabsItem = document.querySelectorAll('.tabs-item');
 const elsTabsPanel = document.querySelectorAll('.tab-panel')
@@ -22,7 +27,7 @@ function deactivateTabPanel () {
 
 function closeAccordionItems () {
   elsAccordionItem.forEach(function (elAccordionItem) {
-    elAccordionItem.classList.remove('accordion__item-open')
+    elAccordionItem.classList.remove(modifaer.AccordionItemOpen)
   })
 }
 
@@ -60,6 +65,6 @@ elsAccordionItemToggler.forEach(function (elAccordionItemToggler) {
   elAccordionItemToggler.addEventListener('click', function () {
     closeAccordionItems();
 
-    elAccordionItemToggler.closest('.accordion__item').classList.add('accordion__item-open');
+    elAccordionItemToggler.closest('.accordion__item').classList.add(modifaer.AccordionItemOpened);
   });
 });

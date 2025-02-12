@@ -206,6 +206,9 @@ img {
 .accordion__item-text {
   margin: 0;
 }
+.accordion__item-text:not(:last-child) {
+  margin-bottom: 20px;
+}
 
 /* site header */
 .site-header {
@@ -220,6 +223,8 @@ img {
   display: block;
 }
 .site-header__logo-img {
+  display: block;
+  align-items: center;
   width: 150px;
   height: 25px;
 }
@@ -587,10 +592,15 @@ img {
   display: flex;
   align-items: center;
 }
-
-.site-footer__sitenav {
-}
 .site-footer__logo {
+  display: block;
+  align-items: center;
+}
+
+.site-footer__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 63px;
 }
 .sitenav__link-footer {
